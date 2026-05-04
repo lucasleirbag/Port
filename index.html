@@ -147,13 +147,50 @@
           <p class="project-desc">Projeto de inovação vencedor do Cebraspe.</p>
         </a>
 
-        <a href="https://github.com/lucasleirbag/Reconhecimento_facial.git" target="_blank" class="project-item">
+        <div class="project-item">
           <div class="project-header">
-            <span class="project-name">reconhecimento-facial</span>
-            <span class="project-stack">python · opencv · sqlite</span>
+            <a href="https://github.com/lucasleirbag/Reconhecimento_facial.git" target="_blank" class="project-name">reconhecimento-facial</a>
+            <span class="project-stack">python · opencv · dlib · sqlite</span>
+            <button class="demo-open-btn" data-demo-open="face-detection">&gt; demo</button>
           </div>
-          <p class="project-desc">Sistema de reconhecimento facial em tempo real para cadastro e identificação. Controle de acesso e segurança.</p>
-        </a>
+          <p class="project-desc">Detecção facial em tempo real robusto a óculos e máscaras. Cadastro e identificação de usuários para controle de acesso.</p>
+        </div>
+
+        <div class="project-item">
+          <div class="project-header">
+            <span class="project-name">ocr-de-documentos</span>
+            <span class="project-stack">python · tesseract · modelos próprios</span>
+            <button class="demo-open-btn" data-demo-open="ocr">&gt; demo</button>
+          </div>
+          <p class="project-desc">Extração de texto em documentos com modelos OCR próprios e análise dos dados extraídos.</p>
+        </div>
+
+        <div class="project-item">
+          <div class="project-header">
+            <span class="project-name">corretor-de-gabaritos — omr</span>
+            <span class="project-stack">python · opencv · numpy</span>
+            <button class="demo-open-btn" data-demo-open="omr">&gt; demo</button>
+          </div>
+          <p class="project-desc">Detecção automática de marcações em gabaritos (OMR) via análise de densidade de pixels em canvas.</p>
+        </div>
+
+        <div class="project-item">
+          <div class="project-header">
+            <span class="project-name">docorient</span>
+            <span class="project-stack">python · opencv · pypi</span>
+            <button class="demo-open-btn" data-demo-open="docorient">&gt; demo</button>
+          </div>
+          <p class="project-desc">Biblioteca open-source para correção automática de orientação de documentos digitalizados via projeção de perfil.</p>
+        </div>
+
+        <div class="project-item">
+          <div class="project-header">
+            <span class="project-name">detector-de-placas</span>
+            <span class="project-stack">python · yolov8 · tesseract · opencv</span>
+            <button class="demo-open-btn" data-demo-open="plates">&gt; demo</button>
+          </div>
+          <p class="project-desc">Pipeline de detecção e leitura de placas veiculares: YOLOv8 para localizar a região + OCR para extrair o número.</p>
+        </div>
 
         <a href="https://github.com/username/projeto2" target="_blank" class="project-item">
           <div class="project-header">
@@ -176,22 +213,6 @@
             <span class="project-name">maestrotech</span>
           </div>
           <p class="project-desc">Automação de seleção de músicas para cultos. Escala mensal enviada automaticamente ao grupo de louvor.</p>
-        </a>
-
-        <a href="https://github.com/username/projeto3" target="_blank" class="project-item">
-          <div class="project-header">
-            <span class="project-name">corretor-de-gabaritos</span>
-            <span class="project-stack">python · opencv · deep learning</span>
-          </div>
-          <p class="project-desc">Leitura e correção automática de gabaritos via câmera usando visão computacional.</p>
-        </a>
-
-        <a href="https://github.com/username/projeto3" target="_blank" class="project-item">
-          <div class="project-header">
-            <span class="project-name">classificador-de-documentos</span>
-            <span class="project-stack">python · machine learning · api</span>
-          </div>
-          <p class="project-desc">API para classificação automática de imagens e documentos com deep learning.</p>
         </a>
 
       </div>
@@ -230,6 +251,18 @@
     </section>
 
   </div>
+  <!-- CDN libraries for interactive demos -->
+  <script src="https://cdn.jsdelivr.net/npm/face-api.js@0.22.2/dist/face-api.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/tesseract.js@5.0.4/dist/tesseract.min.js"></script>
+
+  <!-- Demo modules -->
+  <script src="demos/engine.js"></script>
+  <script src="demos/face.js"></script>
+  <script src="demos/ocr.js"></script>
+  <script src="demos/omr.js"></script>
+  <script src="demos/docorient.js"></script>
+  <script src="demos/plates.js"></script>
+  <script src="demos/index.js"></script>
 </body>
 
 </html>
